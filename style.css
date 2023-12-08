@@ -1,0 +1,215 @@
+.bg-image {
+  background-image: url(images/download.jpg);
+  position: center;
+  height: 500px;
+  background-position: center;
+  margin-top: 140px;
+  background-repeat: no-repeat;
+  border: none;
+  display: flex;
+}
+
+.bg-image:before {
+  content: "";
+  position: absolute;
+  top:0 ;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(images/1491dc218b18c5ffa1b1a433ac71972c.jpg);
+  background-size:  750px;
+  background-position: center;
+  mix-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  transition: background-color 0.5s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-item {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-image {
+    display: none;
+  }
+}
+
+.about {
+  top:0;
+  position: center;
+  align-items: center;
+  color: whitesmoke;
+  background: linear-gradient(to right, #3d0101, #333); 
+}
+
+.items:hover{
+  color: whitesmoke;
+}
+
+.items {
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+.section-resume{
+  margin-left: 230px;
+  padding: 20px; 
+  background-color: whitesmoke;
+}
+p {
+  padding-top: 20px;
+  text-align: justify;
+  color: whitesmoke;
+}
+
+.educ{
+  position: center;
+  align-items: center;
+  color: whitesmoke;
+  top: 40px;
+  background: linear-gradient(to right, #000000, #333); 
+}
+
+.educ,.about,.exp,.con{
+  margin-bottom: 20px;
+  border: 1px solid
+    color-mix(in srgb, #333, whitesmoke 20%);
+  border-radius: 3px;
+  position: sticky;
+  top: 0;
+  padding: 30px;
+  margin: 0 auto;
+  box-shadow: 0 -5px 10px black
+    0 5px 10px black;
+    overflow-y: auto;
+}
+
+.container{
+  width: 100%;
+  height: 600px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.exp{
+  position: center;
+  align-items: center;
+  color: whitesmoke;
+  top: 40px;
+  background: linear-gradient(to right, #661f03, #cf6016); 
+}
+
+.skill-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skill-label {
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.skill-level {
+  flex-grow: 1;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background-color: #f08102;
+  border-radius: 5px;
+}
+
+.skill-progress1 {
+  height: 100%;
+  background-color: #c4f002;
+  border-radius: 5px;
+}
+
+.skill-progress2 {
+  height: 100%;
+  background-color: #3aec04;
+  border-radius: 5px;
+}
+
+.con{
+  position: center;
+  align-items: center;
+  color: whitesmoke;
+  top: 80px;
+  background: linear-gradient(to right, #020947, #c5570e); 
+}
+
+.animated-text{
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes deleting {
+  from { width: 100%; }
+  to { width: 0; }
+}
+
+@keyframes easeInOut {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left;
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+    opacity: 1;
+  }
+}
+
+.animated-text {
+  animation: typing 2s cubic-bezier(0.25, 0.1, 0.25, 1) infinite,
+             deleting 3s cubic-bezier(0.25, 0.1, 0.25, 1) infinite 2s; 
+}
+
+/* CSS for small devices */
+@media only screen and (max-width: 600px) {
+  /* your styles for small devices go here */
+ }
+ 
+ /* CSS for medium devices */
+ @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /* your styles for medium devices go here */
+ }
+ 
+ /* CSS for large devices */
+ @media only screen and (min-width: 1024px) {
+  /* your styles for large devices go here */
+ }

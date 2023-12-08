@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Your Name - Resume</title>
+</head>
+<body>
+    
+    <!-- Navigation Bar with Live Background -->
+    <nav id="navbar">
+        <div class="nav-item" onclick="showSection('about-me')" onmouseover="changeBackgroundImage('url(images/hoverimg.jpg)')" onmouseout="resetBackgroundImage()">
+            <a href="#about-me" class="items">About Me</a>
+        </div>
+        <div class="nav-item" onclick="showSection('education')" onmouseover="changeBackgroundImage('url(images/hoverim.jpg)')" onmouseout="resetBackgroundImage()">
+            <a href="#education" class="items">Education</a>
+        </div>
+        <div class="nav-item" onclick="showSection('experience')" onmouseover="changeBackgroundImage('url(images/hoverimga.jpg)')" onmouseout="resetBackgroundImage()">
+            <a href="#experience" class="items">Experience</a>
+        </div>
+        <div class="nav-item" onclick="showSection('contact')" onmouseover="changeBackgroundImage('url(images/hoverimge.jpg)')" onmouseout="resetBackgroundImage()">
+            <a href="#contact" class="items">Contact</a>
+        </div>
+    </nav>
+
+    <div class="bg-image"></div>
+    <div class="container">
+        <div class="section-resume">
+            <section class="about">
+                <h2 id="about-me">About Me</h2>
+                    <p>Devoted and focused IT specialist who is passionate about using technology to advance 
+                        organizational success. even though im still learning and I bring to every project a 
+                        special combination of technical know-how and strategic thinking.  
+                    </p>
+                    <p>
+                        My dedication to staying 
+                        current with new developments in the field and technology enables
+                        me to create and put into practice creative solutions that maximize operational effectiveness. 
+                    </p>
+                    <p>
+                        I am certain that I can help any organization continue to grow and succeed. Among my most important 
+                        qualities are my keen analytical abilities, meticulous attention to detail, and proactive problem-solving style. 
+                    </p>
+                    <p>
+                        My objective is to join a dynamic team with my knowledge and experience so that I can further my education and 
+                        meaningfully contribute to the organization's technological advancements. 
+                    </p>
+            </section>
+        </div>     
+    
+        <div class="section-resume">
+                <section class="educ">
+                    <h2 id="education">Education</h2>
+                    <p>
+                        Bachelor of Science in Information Technology 
+                        <br>University of Cordilleras
+                        <br>1st year student
+                    </p>
+
+                    <p>
+                        <b>Relevant Coursework:</b> 
+                        <li>Introduction to HTML</li>
+                        <li>CSS fundamentals</li>
+                        <li>JavaScript</li>
+                        <p>
+                            Back-end Development:
+                            <li>Python</li>
+                        </p>
+                    </p>
+
+                    <p>
+                        <b>High School Diploma</b>
+                        <br>Baguio College of Technology
+                        <br>Graduation Year: 2023
+                        <p>
+                            Relevant Electives: 
+                            <li>Comp-Tech</li>
+                        </p>
+                    </p>
+                </section>
+        </div>
+
+        <div class="section-resume">
+            <section class="exp">
+                <h2 id="experience">Experience</h2>
+
+                <p> <b>Academic Projects</b></p>
+                    <p>Resume/Portfolio
+                        <li>Designed and implemented a personal online portfolio showcasing various 
+                            web development projects. Utilized front-end technologies such as HTML, CSS, and JavaScript.
+                        </li>
+                    </p>
+                <p><b>Programming Projects</b>
+                    <li>Measurments Convertion</li>
+                    <li>ATM account/Bank</li>
+                    <li>Internet Plan</li>
+                    <li>Calculator</li>
+                    <li>Employee Salary</li>
+                </p>
+                
+                <h2>Skills</h2>
+                <p><b>Programming Language</b></p>
+
+                <div class="skill-bar">
+                    <span class="skill-label">HTML:</span>
+                    <div class="skill-level">
+                      <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-bar">
+                    <span class="skill-label">CSS:</span>
+                    <div class="skill-level">
+                      <div class="skill-progress1" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <span class="skill-label">JS:</span>
+                    <div class="skill-level">
+                      <div class="skill-progress2" style="width: 20%;"></div>
+                    </div>
+                </div>
+
+                
+                <div class="skill-bar">
+                    <span class="skill-label">PYTHON:</span>
+                    <div class="skill-level">
+                      <div class="skill-progress2" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <p><b>Soft Skill</b></p>
+                <li>Strong problem-solving abilities</li>
+                <li> Attention to detail</li>
+                <li>Quick learner with a passion for technology</li>
+            </section>
+        </div>
+
+        <div class="section-resume">
+            <section class="con">
+                <h2 id="contact">Contact</h2>
+
+                <div class="animated-text">
+                    <h3 >VILORIA, GINALD ALDRIN PARAS</h3>
+                </div>
+                
+                <p>
+                    Lot 78 East Quirino Hill, Baguio City
+                </p>
+                <p>
+                    Phone:09095620887 | email:<a href="https://mail.google.com/" target="_blank" style="color: whitesmoke;">aldrinviloria02@gmail.com</a>
+                </p>
+                
+            </section>
+        </div>
+    </div>
+</body>
+</html>
